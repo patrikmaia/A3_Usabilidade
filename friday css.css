@@ -1,0 +1,74 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('imagens/cursoss.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/* Cabeçalho */
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo preto translúcido */
+    padding: 1em;
+    text-align: center;
+}
+
+/* Barra de busca */
+#search-bar {
+    width: 80%;
+    padding: 0.5em;
+    margin-top: 1em;
+    font-size: 1em;
+}
+
+/* Principal */
+main {
+    padding: 1em;
+}
+
+/* Lista de cursos */
+#courses-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+/* Curso individual */
+.course {
+    background-color: rgb(255, 255, 255); /* Fundo branco translúcido */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    width: calc(50% - 1em); /* Ajusta a largura da div dos cursos */
+    box-sizing: border-box;
+    color: black;
+}
+
+.course h2 {
+    margin-top: 0;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .course {
+        width: calc(100% - 2em);
+    }
+}
+
+@media (max-width: 480px) {
+    .course {
+        width: calc(100% - 2em);
+    }
+}
+
+/* Imagens dos cursos */
+.course img {
+    max-width: 20%; /* Ajusta o tamanho da imagem */
+    float: right; /* Alinha a imagem à direita */
+    margin-bottom: 1em;
+}
